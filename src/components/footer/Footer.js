@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Footer extends Component {
   render() {
@@ -12,31 +13,31 @@ class Footer extends Component {
 
             <ul>
               <li>
-                <a href='/'>Welcome</a>
+                <Link to='/'>Welcome</Link>
               </li>
               <li>
-                <a href='/'>What We Do</a>
+                <Link to='/'>What We Do</Link>
               </li>
               <li>
-                <a href='/'>Projects</a>
+                <Link to='/'>Projects</Link>
               </li>
               <li>
-                <a href='/'>Contact Us</a>
+                <Link to='/'>Contact Us</Link>
               </li>
               <li>
-                <a href='/resume' target='_blank'>
+                <Link to='/resume' target='_blank'>
                   Resume
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='/terms' target='_blank'>
+                <Link to='/terms' target='_blank'>
                   Terms and Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='/privacy' target='_blank'>
+                <Link to='/privacy' target='_blank'>
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

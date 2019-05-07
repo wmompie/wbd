@@ -1,30 +1,31 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   render() {
     return (
       <div>
         <div>
-          <a href='/'>
+          <Link to='/'>
             <img
               src='https://res.cloudinary.com/web-blueprint-design/image/upload/c_scale,f_auto,q_auto,w_250/v1555381549/WBD/wbd-transparent_lmrgdh.png'
               alt='Web Blueprint Design Brand'
             />
-          </a>
+          </Link>
           <ul>
             <li>
-              <a href='/'>WHAT WE DO</a>
+              <Link to='/'>WHAT WE DO</Link>
             </li>
             <li>
-              <a href='/'>PROJECTS</a>
+              <Link to='/'>PROJECTS</Link>
             </li>
             <li>
-              <a href='/'>CONTACT</a>
+              <Link to='/'>CONTACT</Link>
             </li>
             <li>
-              <a href='/resume' target='_blank'>
+              <Link to='/resume' target='_blank'>
                 RESUME
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
