@@ -23,9 +23,7 @@ class Navbar extends Component {
               <Link to='/'>CONTACT</Link>
             </li>
             <li>
-              <Link to='/resume' target='_blank'>
-                RESUME
-              </Link>
+              <Link to='/resume'>RESUME</Link>
             </li>
           </ul>
         </div>

@@ -25,19 +25,13 @@ class Footer extends Component {
                 <Link to='/'>Contact Us</Link>
               </li>
               <li>
-                <Link to='/resume' target='_blank'>
-                  Resume
-                </Link>
+                <Link to='/resume'>Resume</Link>
               </li>
               <li>
-                <Link to='/terms' target='_blank'>
-                  Terms and Conditions
-                </Link>
+                <Link to='/terms'>Terms and Conditions</Link>
               </li>
               <li>
-                <Link to='/privacy' target='_blank'>
-                  Privacy Policy
-                </Link>
+                <Link to='/privacy'>Privacy Policy</Link>
               </li>
             </ul>
           </div>
