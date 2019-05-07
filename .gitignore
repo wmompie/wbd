@@ -10,8 +10,6 @@
 
 # production
 /build
-/.netlify
-/netlify.toml
 
 # misc
 .DS_Store
