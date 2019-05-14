@@ -1,37 +1,94 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-class Navbar extends Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <Link to='/'>
-            <img
-              src='https://res.cloudinary.com/web-blueprint-design/image/upload/c_scale,f_auto,q_auto,w_250/v1555381549/WBD/wbd-transparent_lmrgdh.png'
-              alt='Web Blueprint Design Brand'
-            />
-          </Link>
-          <ul>
-            <li>
-              <Link to='/'>WHAT WE DO</Link>
-            </li>
-            <li>
-              <Link to='/'>PROJECTS</Link>
-            </li>
-            <li>
-              <Link to='/'>CONTACT</Link>
-            </li>
-            <li>
-              <Link to='/resume' target='_blank'>
-                RESUME
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    );
+import Logo from './Logo';
+
+const anchorStyle = {
+  color: '#01a4e4',
+  cursor: 'pointer',
+  fontWeight: 'bold',
+};
+
+const Nav = styled.nav`
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+
+  @media (min-width: 992px) {
+    position: relative;
   }
-}
+
+  @media (max-width: 575px) {
+    .logo {
+      height: 40px;
+    }
+  }
+`;
+
+const Navbar = ({ id }) => (
+  <Nav id={id} className='navbar navbar-expand-md navbar-light bg-light'>
+    <div className='container-fluid'>
+      <a href='/' className='navbar-brand'>
+        <Logo />
+      </a>
+      <button
+        className='navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarContent'
+        aria-controls='navbarContent'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
+      >
+        <span className='navbar-toggler-icon' />
+      </button>
+      <div className='collapse navbar-collapse' id='navbarContent'>
+        <ul className='navbar-nav ml-auto'>
+          <li className='nav-item mx-3'>
+            <ScrollLink
+              className='nav-link'
+              to='whatwedo'
+              smooth={true}
+              offset={-40}
+              duration={900}
+              style={anchorStyle}
+            >
+              WHAT WE DO
+            </ScrollLink>
+          </li>
+          <li className='nav-item mx-3'>
+            <ScrollLink
+              className='nav-link'
+              to='projects'
+              smooth={true}
+              offset={-40}
+              duration={900}
+              style={anchorStyle}
+            >
+              PROJECTS
+            </ScrollLink>
+          </li>
+          <li className='nav-item mx-3'>
+            <ScrollLink className='nav-link' to='contact' smooth={true} duration={900} style={anchorStyle}>
+              CONTACT
+            </ScrollLink>
+          </li>
+          <li className='nav-item mx-3'>
+            <Link className='nav-link' to='/resume' target='_blank' style={anchorStyle}>
+              RESUME
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </Nav>
+);
+
+Navbar.propTypes = {
+  id: PropTypes.string.isRequired,
+};
 
 export default Navbar;

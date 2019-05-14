@@ -1,65 +1,73 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+import { FooterDiv, Sitemap, SitemapHr, ContactHr, FooterLi, FooterH2, FooterIcon, anchorStyle } from '../../elements';
 
-class Footer extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Footer Section</h1>
-        <div>
-          <div>
-            <h2>SITEMAP</h2>
-            <hr />
+const Footer = () => (
+  <FooterDiv>
+    <div className='row justify-content-around mx-0'>
+      <Sitemap className='order-2 order-md-1'>
+        <FooterH2 className='display-5'>SITEMAP</FooterH2>
+        <SitemapHr className='my-1' />
 
-            <ul>
-              <li>
-                <Link to='/'>Welcome</Link>
-              </li>
-              <li>
-                <Link to='/'>What We Do</Link>
-              </li>
-              <li>
-                <Link to='/'>Projects</Link>
-              </li>
-              <li>
-                <Link to='/'>Contact Us</Link>
-              </li>
-              <li>
-                <Link to='/resume' target='_blank'>
-                  Resume
-                </Link>
-              </li>
-              <li>
-                <Link to='/terms' target='_blank'>
-                  Terms and Conditions
-                </Link>
-              </li>
-              <li>
-                <Link to='/privacy' target='_blank'>
-                  Privacy Policy
-                </Link>
-              </li>
-            </ul>
-          </div>
+        <ul className='text-light mt-4'>
+          <FooterLi>
+            <ScrollLink to='welcome' smooth={true} duration={900} style={anchorStyle}>
+              Welcome
+            </ScrollLink>
+          </FooterLi>
+          <FooterLi>
+            <ScrollLink to='whatwedo' smooth={true} offset={-40} duration={900} style={anchorStyle}>
+              What We Do
+            </ScrollLink>
+          </FooterLi>
+          <FooterLi>
+            <ScrollLink to='projects' smooth={true} offset={-40} duration={900} style={anchorStyle}>
+              Projects
+            </ScrollLink>
+          </FooterLi>
+          <FooterLi>
+            <ScrollLink to='contact' smooth={true} duration={900} style={anchorStyle}>
+              Contact Us
+            </ScrollLink>
+          </FooterLi>
+          <FooterLi>
+            <Link to='/resume' target='_blank' style={anchorStyle}>
+              Resume
+            </Link>
+          </FooterLi>
+          <FooterLi>
+            <Link to='/terms' target='_blank' style={anchorStyle}>
+              Terms and Conditions
+            </Link>
+          </FooterLi>
+          <FooterLi>
+            <Link to='/privacy' target='_blank' style={anchorStyle}>
+              Privacy Policy
+            </Link>
+          </FooterLi>
+        </ul>
+      </Sitemap>
 
-          <div>
-            <h2>WHERE TO FIND US</h2>
-            <hr />
-            <div>
-              <li>Web Blueprint Design,</li>
-              <li>Fort Lauderdale, FL</li>
-              <li>&#40;754&#41; 900-4223</li>
-              <li>
-                <a href='mailto:sales@webblueprintdesign.com'>
-                  sales&#64;webblueprintdesign.com
-                </a>
-              </li>
-            </div>
-          </div>
+      <div className='order-1 order-md-2'>
+        <FooterH2 className='display-5'>WHERE TO FIND US</FooterH2>
+        <ContactHr className='my-1' />
+        <div className='mt-4'>
+          <FooterLi>
+            <FooterIcon className='fas fa-home' /> Web Blueprint Design,
+          </FooterLi>
+          <FooterLi style={{ paddingLeft: '2.5rem' }}>Fort Lauderdale, FL</FooterLi>
+          <FooterLi>
+            <FooterIcon className='fas fa-phone-volume' /> &#40;754&#41; 900-4223
+          </FooterLi>
+          <FooterLi>
+            <FooterIcon className='far fa-envelope' />
+            <a href='mailto:sales@webblueprintdesign.com'>sales&#64;webblueprintdesign.com</a>
+          </FooterLi>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  </FooterDiv>
+);
 
 export default Footer;
