@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import { Button, Form } from '../../elements';
 
 import TextInputGroup from './TextInputGroup';
 import TextareaGroup from './TextareaGroup';
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 class ContactForm extends Component {
-  state = {
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-    errors: {},
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+      errors: {},
+    };
+  }
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
@@ -37,6 +46,14 @@ class ContactForm extends Component {
       return;
     }
 
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...this.state }),
+    })
+      .then(() => alert('Success!'))
+      .catch(error => alert(error));
+
     this.setState({
       name: '',
       email: '',
@@ -45,18 +62,23 @@ class ContactForm extends Component {
       errors: {},
     });
 
-    await axios.post('/api/form', {
-      name,
-      email,
-      subject,
-      message,
-    });
+    // try {
+    //   await axios.post('/api/form', {
+    //     name,
+    //     email,
+    //     subject,
+    //     message,
+    //   });
+    // } catch (e) {
+    //   console.log(e);
+    // }
   };
 
   render() {
     const { name, email, subject, message, errors } = this.state;
     return (
-      <Form name='contactForm' method='POST' onSubmit={this.onSubmit}>
+      <Form name='contact' method='POST' onSubmit={this.onSubmit}>
+        <input type='hidden' name='form-name' value='contact' />
         <TextInputGroup name='name' label='Name:' value={name} onChange={this.onChange} error={errors.name} />
         <TextInputGroup
           type='email'
