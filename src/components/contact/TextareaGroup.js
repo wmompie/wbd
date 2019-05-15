@@ -1,5 +1,5 @@
 import React from 'react';
-import { Label } from '../../elements';
+import { Label } from '../../layouts/elements';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { boxShadow, ProjectLink, GitLink } from '../../elements';
+import { boxShadow, ProjectLink, GitLink } from '../../layouts/elements';
 import PropTypes from 'prop-types';
 
 const Project = ({ img, alt, projectLink, projectName, git }) => (

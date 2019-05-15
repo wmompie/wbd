@@ -14,7 +14,7 @@ import {
   MediaContainer,
   EmailContainer,
   SocialContainer,
-} from '../../elements';
+} from '../../layouts/elements';
 import PropTypes from 'prop-types';
 
 const ContactBG = styled(Background)`
@@ -85,7 +85,7 @@ class Contact extends Component {
               <OverlayRight className={this.state.clicked ? 'overlayright-active' : ''}>
                 <h1>Prefer To Contact Us Directly?</h1>
                 <p>Click on Contact to send us an email!</p>
-                <Button className='ghost' onClick={this.handleClick}>
+                <Button className='ghost btn-sm' onClick={this.handleClick}>
                   Contact
                 </Button>
               </OverlayRight>

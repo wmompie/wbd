@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
-import { Sale } from '../../elements';
+import { Sale } from '../../layouts/elements';
 import PropTypes from 'prop-types';
 
 const MainStyle = styled.div`

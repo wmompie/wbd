@@ -32,7 +32,7 @@ export const Form = styled.form`
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  padding: 0 50px;
+  padding: 4% 50px;
   text-align: center;
 `;
 
@@ -164,7 +164,7 @@ export const ContactContainer = styled.div`
   margin-top: 3rem;
   max-width: 100%;
   max-height: 70vh;
-  min-height: 480px;
+  min-height: 520px;
   overflow: hidden;
   position: relative;
   width: 768px;

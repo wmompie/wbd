@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+import { ToTop } from '../layouts/elements';
 import {
   ResumeDiv,
   ResumeHr,
@@ -16,10 +18,15 @@ import {
   ContactLI,
   FontIcon,
   Anchor,
-} from '../../elements/Resume';
+} from '../layouts/elements/Resume';
 
 const Resume = () => (
-  <ResumeDiv className='py-5'>
+  <ResumeDiv className='py-5' id='top'>
+    <Link to='top' smooth={true} duration={900}>
+      <ToTop>
+        <i className='fas fa-chevron-up' />
+      </ToTop>
+    </Link>
     <div className='container-fluid'>
       <ResumeH1>William Mompie</ResumeH1>
       <ResumeH2>Web Developer</ResumeH2>

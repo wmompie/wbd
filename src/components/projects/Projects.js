@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from './Project';
-import { Heading2 } from '../../elements';
+import { Heading2 } from '../../layouts/elements';
 import PropTypes from 'prop-types';
 
 const Projects = ({ id }) => (

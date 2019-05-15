@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
-import { Button, Form } from '../../elements';
+import { Button, Form } from '../../layouts/elements';
 
 import TextInputGroup from './TextInputGroup';
 import TextareaGroup from './TextareaGroup';
@@ -20,6 +19,7 @@ class ContactForm extends Component {
       subject: '',
       message: '',
       errors: {},
+      success: false,
     };
   }
 
@@ -28,6 +28,7 @@ class ContactForm extends Component {
   onSubmit = async e => {
     e.preventDefault();
     const { name, email, subject, message } = this.state;
+
     // check for errors
     if (name === '') {
       this.setState({ errors: { name: 'Name is required' } });
@@ -51,7 +52,7 @@ class ContactForm extends Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...this.state }),
     })
-      .then(() => alert('Success!'))
+      .then(() => this.setState({ success: true }))
       .catch(error => alert(error));
 
     this.setState({
@@ -61,49 +62,48 @@ class ContactForm extends Component {
       message: '',
       errors: {},
     });
-
-    // try {
-    //   await axios.post('/api/form', {
-    //     name,
-    //     email,
-    //     subject,
-    //     message,
-    //   });
-    // } catch (e) {
-    //   console.log(e);
-    // }
   };
 
   render() {
-    const { name, email, subject, message, errors } = this.state;
+    const { name, email, subject, message, errors, success } = this.state;
     return (
-      <Form name='contact' method='POST' onSubmit={this.onSubmit}>
-        <input type='hidden' name='form-name' value='contact' />
-        <TextInputGroup name='name' label='Name:' value={name} onChange={this.onChange} error={errors.name} />
-        <TextInputGroup
-          type='email'
-          name='email'
-          label='Email:'
-          value={email}
-          onChange={this.onChange}
-          error={errors.email}
-        />
-        <TextInputGroup
-          name='subject'
-          label='Subject:'
-          value={subject}
-          onChange={this.onChange}
-          error={errors.subject}
-        />
-        <TextareaGroup
-          name='message'
-          label='Message:'
-          value={message}
-          onChange={this.onChange}
-          error={errors.message}
-        />
-        <Button type='submit'>SEND</Button>
-      </Form>
+      <div>
+        {success ? (
+          <div className='alert alert-success' role='alert'>
+            <button type='button' className='close' data-dismiss='alert' aria-label='Close'>
+              <span aria-hidden='true'>&times;</span>
+            </button>
+            <strong>Success!</strong> You're email has been submitted!
+          </div>
+        ) : null}
+        <Form name='contact' method='POST' onSubmit={this.onSubmit}>
+          <input type='hidden' name='form-name' value='contact' />
+          <TextInputGroup name='name' label='Name:' value={name} onChange={this.onChange} error={errors.name} />
+          <TextInputGroup
+            type='email'
+            name='email'
+            label='Email:'
+            value={email}
+            onChange={this.onChange}
+            error={errors.email}
+          />
+          <TextInputGroup
+            name='subject'
+            label='Subject:'
+            value={subject}
+            onChange={this.onChange}
+            error={errors.subject}
+          />
+          <TextareaGroup
+            name='message'
+            label='Message:'
+            value={message}
+            onChange={this.onChange}
+            error={errors.message}
+          />
+          <Button type='submit'>SEND</Button>
+        </Form>
+      </div>
     );
   }
 }

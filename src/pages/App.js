@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import '../layouts/App.css';
 
-import Main from './components/main/Main';
-import Terms from './components/pages/Terms';
-import Privacy from './components/pages/Privacy';
-import NotFound from './components/notfound/NotFound';
-import Resume from './components/pages/Resume';
+import Main from './Main';
+import Terms from './Terms';
+import Privacy from './Privacy';
+import NotFound from './NotFound';
+import Resume from './Resume';
 
 function App() {
   return (

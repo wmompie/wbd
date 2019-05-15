@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { Label } from '../../elements';
+import { Label } from '../../layouts/elements';
 import PropTypes from 'prop-types';
 
 const TextInputGroup = ({ label, type, name, value, onChange, error }) => {

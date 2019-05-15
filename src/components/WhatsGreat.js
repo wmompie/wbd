@@ -1,7 +1,7 @@
 import React from 'react';
 import Bullet from './Bullet';
 import styled from 'styled-components';
-import { Heading2, Background } from '../../elements';
+import { Heading2, Background } from '../layouts/elements';
 
 const WhatsGreatContainer = styled(Background)`
   background-image: url('https://res.cloudinary.com/web-blueprint-design/image/upload/c_scale,e_blur:300,f_auto,q_auto,w_1920/v1557356669/WBD/right-arrow_italdz.jpg');

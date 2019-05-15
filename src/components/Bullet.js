@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Heading5 } from '../../elements';
+import { Heading5 } from '../layouts/elements';
 import PropTypes from 'prop-types';
 
 const Arrow = styled.i`

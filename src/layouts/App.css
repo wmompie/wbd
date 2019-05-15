@@ -12,10 +12,17 @@ li,
 a,
 button,
 label,
-input {
+input,
+textarea {
   font-family: 'Roboto', sans-serif;
 }
 
 p {
   line-height: 1.7;
+}
+
+.alert {
+  margin-bottom: 0;
+  border: none;
+  border-radius: none;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import PropTypes from 'prop-types';
 
-import { TitleH1, TitleH2, TitleHr, buttonStyle } from '../../elements';
+import { TitleH1, TitleH2, TitleHr, buttonStyle } from '../../layouts/elements';
 
 const Title = ({ mainHead, subHead }) => (
   <div className='jumbotron text-center' style={{ background: 'none' }}>

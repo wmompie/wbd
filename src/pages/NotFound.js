@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Particles from 'react-particles-js';
-import particleOptions from './particleOptions';
+import particleOptions from '../components/particleOptions';
 import styled from 'styled-components';
 
 const particleStyle = {
@@ -32,7 +32,6 @@ const ToHome = styled.span`
   top: 15%;
   transition: opacity 0.6s ease-in-out;
   z-index: 999;
-
   &:hover {
     background-color: #01a4e4;
   }

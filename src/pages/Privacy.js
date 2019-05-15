@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { ToTop } from '../../elements';
+import { ToTop } from '../layouts/elements';
 
 import styled from 'styled-components';
 
-import Copyright from '../footer/Copyright';
+import Copyright from '../components/footer/Copyright';
 
 const H2 = styled.h2`
   font-weight: bold;

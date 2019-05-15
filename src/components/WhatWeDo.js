@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { Heading2, Heading5 } from '../../elements';
+import { Heading2, Heading5 } from '../layouts/elements';
 
 const WWDHeadingContainer = styled.div`
   display: flex;
