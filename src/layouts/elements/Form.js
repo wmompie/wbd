@@ -39,6 +39,7 @@ export const Form = styled.form`
 export const EmailContainer = styled.div`
   align-items: center;
   height: 100%;
+  left: 0;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -46,27 +47,29 @@ export const EmailContainer = styled.div`
   width: 50%;
   z-index: 1;
 
-  @media (min-width: 577px) {
+  /* @media (min-width: 577px) {
     left: 0;
-  }
-  @media (max-width: 576px) {
+  } */
+  /* @media (max-width: 576px) {
     bottom: 0;
     height: 50%;
     opacity: 1;
     padding-top: 3rem;
     width: 100%;
     z-index: 5;
-  }
+  } */
 `;
 
 export const MediaContainer = styled.div`
   height: 100%;
+  left: 0;
   position: absolute;
+  top: 0;
   transition: all 0.6s ease-in-out;
   width: 50%;
   z-index: 2;
 
-  @media (min-width: 577px) {
+  /* @media (min-width: 577px) {
     left: 0;
     top: 0;
   }
@@ -75,7 +78,7 @@ export const MediaContainer = styled.div`
     height: 50%;
     opacity: 1;
     width: 100%;
-  }
+  } */
 `;
 
 export const OverlayContainer = styled.div`
@@ -88,9 +91,9 @@ export const OverlayContainer = styled.div`
   width: 50%;
   z-index: 100;
 
-  @media (max-width: 576px) {
+  /* @media (max-width: 576px) {
     display: none;
-  }
+  } */
 `;
 
 export const Overlay = styled.div`
@@ -174,12 +177,12 @@ export const ContactContainer = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 576px) {
+  /* @media (max-width: 576px) {
     align-content: space-around;
     display: flex;
     flex-wrap: wrap;
     min-height: 850px;
-  }
+  } */
 
   .email-active {
     animation: ${show} 0.6s;
