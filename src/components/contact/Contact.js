@@ -58,10 +58,10 @@ class Contact extends Component {
             <Form>
               <h1>Prefer Social Media?</h1>
               <SocialContainer>
-                <a href='/'>
+                <a href='https://twitter.com/WebBlueprintD' target='_blank' rel='noopener noreferrer'>
                   <i className='fab fa-twitter' />
                 </a>
-                <a href='/'>
+                <a href='https://www.behance.net/wmompie' target='_blank' rel='noopener noreferrer'>
                   <i className='fab fa-behance' />
                 </a>
                 {/* <a href='/' className='social'>
