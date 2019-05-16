@@ -225,7 +225,7 @@ export const ContactContainer = styled.div`
 
   @media (max-width: 576px) {
     height: 100%;
-    min-height: 1100px;
+    min-height: 1500px;
 
     .email-active {
       animation: ${show} 0.6s;
