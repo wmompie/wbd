@@ -13,7 +13,7 @@ import {
   OverlayRight,
   MediaContainer,
   EmailContainer,
-  SocialContainer
+  SocialContainer,
 } from '../../layouts/elements';
 import PropTypes from 'prop-types';
 
@@ -37,7 +37,7 @@ const ContactH2 = styled(Heading2)`
 
 class Contact extends Component {
   state = {
-    clicked: false
+    clicked: false,
   };
 
   handleClick = e => {
@@ -49,9 +49,7 @@ class Contact extends Component {
     const { clicked } = this.state;
     return (
       <ContactBG id={id}>
-        <ContactH2 className='display-5'>
-          CONTACT US. WE ARE LISTENING
-        </ContactH2>
+        <ContactH2 className='display-5'>CONTACT US. WE ARE LISTENING</ContactH2>
 
         <ContactContainer className='container'>
           <EmailContainer className={clicked ? 'email-active' : ''}>
@@ -61,55 +59,28 @@ class Contact extends Component {
             <Form>
               <h1>Prefer Social Media?</h1>
               <SocialContainer>
-                <a
-                  href='https://twitter.com/WebBlueprintD'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+                <a href='https://twitter.com/WebBlueprintD' target='_blank' rel='noopener noreferrer'>
                   <i className='fab fa-twitter' />
                 </a>
-                <a
-                  href='https://www.behance.net/wmompie'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+                <a href='https://www.behance.net/wmompie' target='_blank' rel='noopener noreferrer'>
                   <i className='fab fa-behance' />
                 </a>
               </SocialContainer>
-              <p>
-                We'd love to hear from you! Check out our social links above.
-              </p>
+              <p>We'd love to hear from you! Check out our social links above.</p>
             </Form>
           </MediaContainer>
-<<<<<<< HEAD
           <OverlayContainer className={clicked ? 'overlaycontainer-active' : ''}>
             <Overlay className={clicked ? 'overlay-active' : ''}>
               <OverlayLeft className={clicked ? 'overlayleft-active' : ''}>
-=======
-          <OverlayContainer
-            className={this.state.clicked ? 'overlaycontainer-active' : ''}
-          >
-            <Overlay className={this.state.clicked ? 'overlay-active' : ''}>
-              <OverlayLeft
-                className={this.state.clicked ? 'overlayleft-active' : ''}
-              >
->>>>>>> ae888a8badab271555517795a68dd0f97c0af812
                 <h1>Contact Form</h1>
                 <p>
-                  Sending us an email is easy. Just fill out the form and we'll
-                  get back to you as soon as possible!
+                  Sending us an email is easy. Just fill out the form and we'll get back to you as soon as possible!
                 </p>
                 <Button className='ghost' onClick={this.handleClick}>
                   Social Media
                 </Button>
               </OverlayLeft>
-<<<<<<< HEAD
               <OverlayRight className={clicked ? 'overlayright-active' : ''}>
-=======
-              <OverlayRight
-                className={this.state.clicked ? 'overlayright-active' : ''}
-              >
->>>>>>> ae888a8badab271555517795a68dd0f97c0af812
                 <h1>Prefer To Contact Us Directly?</h1>
                 <p>Click on Contact to send us an email!</p>
                 <Button className='ghost btn-sm' onClick={this.handleClick}>
@@ -125,7 +96,7 @@ class Contact extends Component {
 }
 
 Contact.propTypes = {
-  id: PropTypes.string.isRequired
+  id: PropTypes.string.isRequired,
 };
 
 export default Contact;
