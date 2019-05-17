@@ -26,3 +26,9 @@ p {
   border: none;
   border-radius: none;
 }
+
+#spinner {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}

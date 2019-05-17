@@ -46,15 +46,16 @@ class Contact extends Component {
 
   render() {
     const { id } = this.props;
+    const { clicked } = this.state;
     return (
       <ContactBG id={id}>
         <ContactH2 className='display-5'>CONTACT US. WE ARE LISTENING</ContactH2>
 
         <ContactContainer className='container'>
-          <EmailContainer className={this.state.clicked ? 'email-active' : ''}>
+          <EmailContainer className={clicked ? 'email-active' : ''}>
             <ContactForm />
           </EmailContainer>
-          <MediaContainer className={this.state.clicked ? 'signin-active' : ''}>
+          <MediaContainer className={clicked ? 'signin-active' : ''}>
             <Form>
               <h1>Prefer Social Media?</h1>
               <SocialContainer>
@@ -64,16 +65,13 @@ class Contact extends Component {
                 <a href='https://www.behance.net/wmompie' target='_blank' rel='noopener noreferrer'>
                   <i className='fab fa-behance' />
                 </a>
-                {/* <a href='/' className='social'>
-                  <i className='fab fa-linkedin-in' />
-                </a> */}
               </SocialContainer>
               <p>We'd love to hear from you! Check out our social links above.</p>
             </Form>
           </MediaContainer>
-          <OverlayContainer className={this.state.clicked ? 'overlaycontainer-active' : ''}>
-            <Overlay className={this.state.clicked ? 'overlay-active' : ''}>
-              <OverlayLeft className={this.state.clicked ? 'overlayleft-active' : ''}>
+          <OverlayContainer className={clicked ? 'overlaycontainer-active' : ''}>
+            <Overlay className={clicked ? 'overlay-active' : ''}>
+              <OverlayLeft className={clicked ? 'overlayleft-active' : ''}>
                 <h1>Contact Form</h1>
                 <p>
                   Sending us an email is easy. Just fill out the form and we'll get back to you as soon as possible!
@@ -82,7 +80,7 @@ class Contact extends Component {
                   Social Media
                 </Button>
               </OverlayLeft>
-              <OverlayRight className={this.state.clicked ? 'overlayright-active' : ''}>
+              <OverlayRight className={clicked ? 'overlayright-active' : ''}>
                 <h1>Prefer To Contact Us Directly?</h1>
                 <p>Click on Contact to send us an email!</p>
                 <Button className='ghost btn-sm' onClick={this.handleClick}>

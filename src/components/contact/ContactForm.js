@@ -78,25 +78,25 @@ class ContactForm extends Component {
         ) : null}
         <Form name='contact' method='POST' onSubmit={this.onSubmit}>
           <input type='hidden' name='form-name' value='contact' />
-          <TextInputGroup name='name' label='Name:' value={name} onChange={this.onChange} error={errors.name} />
+          <TextInputGroup name='name' label='Name' value={name} onChange={this.onChange} error={errors.name} />
           <TextInputGroup
             type='email'
             name='email'
-            label='Email:'
+            label='Email'
             value={email}
             onChange={this.onChange}
             error={errors.email}
           />
           <TextInputGroup
             name='subject'
-            label='Subject:'
+            label='Subject'
             value={subject}
             onChange={this.onChange}
             error={errors.subject}
           />
           <TextareaGroup
             name='message'
-            label='Message:'
+            label='Message'
             value={message}
             onChange={this.onChange}
             error={errors.message}
