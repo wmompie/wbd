@@ -34,6 +34,11 @@ export const Form = styled.form`
   justify-content: center;
   padding: 4% 50px;
   text-align: center;
+
+  .socials {
+    height: 50%;
+    padding: 0;
+  }
 `;
 
 export const EmailContainer = styled.div`
@@ -47,17 +52,11 @@ export const EmailContainer = styled.div`
   width: 50%;
   z-index: 1;
 
-  /* @media (min-width: 577px) {
-    left: 0;
-  } */
-  /* @media (max-width: 576px) {
+  @media (max-width: 576px) {
     bottom: 0;
     height: 50%;
-    opacity: 1;
-    padding-top: 3rem;
     width: 100%;
-    z-index: 5;
-  } */
+  }
 `;
 
 export const MediaContainer = styled.div`
@@ -69,16 +68,11 @@ export const MediaContainer = styled.div`
   width: 50%;
   z-index: 2;
 
-  /* @media (min-width: 577px) {
-    left: 0;
-    top: 0;
-  }
   @media (max-width: 576px) {
     bottom: 0;
     height: 50%;
-    opacity: 1;
     width: 100%;
-  } */
+  }
 `;
 
 export const OverlayContainer = styled.div`
@@ -91,9 +85,12 @@ export const OverlayContainer = styled.div`
   width: 50%;
   z-index: 100;
 
-  /* @media (max-width: 576px) {
-    display: none;
-  } */
+  @media (max-width: 576px) {
+    height: 50%;
+    left: 0;
+    top: 50%;
+    width: 100%;
+  }
 `;
 
 export const Overlay = styled.div`
@@ -110,6 +107,14 @@ export const Overlay = styled.div`
   transform: translateX(0);
   transition: transform 0.6s ease-in-out;
   width: 200%;
+
+  @media (max-width: 576px) {
+    height: 200%;
+    left: 0;
+    top: -100%;
+    transform: translateY(0);
+    width: 100%;
+  }
 `;
 
 export const OverlayLeft = styled.div`
@@ -125,6 +130,12 @@ export const OverlayLeft = styled.div`
   transform: translateX(-20%);
   transition: transform 0.6s ease-in-out;
   width: 50%;
+
+  @media (max-width: 576px) {
+    height: 50%;
+    transform: translateY(-20%);
+    width: 100%;
+  }
 `;
 
 export const OverlayRight = styled.div`
@@ -141,6 +152,14 @@ export const OverlayRight = styled.div`
   transform: translateX(0);
   transition: transform 0.6s ease-in-out;
   width: 50%;
+
+  @media (max-width: 576px) {
+    bottom: 0;
+    height: 50%;
+    top: 50%;
+    transform: translateY(0);
+    width: 100%;
+  }
 `;
 
 export const SocialContainer = styled.div`
@@ -177,13 +196,6 @@ export const ContactContainer = styled.div`
     width: 100%;
   }
 
-  /* @media (max-width: 576px) {
-    align-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 850px;
-  } */
-
   .email-active {
     animation: ${show} 0.6s;
     opacity: 1;
@@ -209,5 +221,37 @@ export const ContactContainer = styled.div`
 
   .overlayright-active {
     transform: translateX(20%);
+  }
+
+  @media (max-width: 576px) {
+    height: 100%;
+    min-height: 1500px;
+
+    .email-active {
+      animation: ${show} 0.6s;
+      opacity: 1;
+      transform: translateY(100%);
+      z-index: 5;
+    }
+
+    .media-active {
+      transform: translateY(100%);
+    }
+
+    .overlaycontainer-active {
+      transform: translateY(-100%);
+    }
+
+    .overlay-active {
+      transform: translateY(50%);
+    }
+
+    .overlayleft-active {
+      transform: translateY(0);
+    }
+
+    .overlayright-active {
+      transform: translateY(20%);
+    }
   }
 `;

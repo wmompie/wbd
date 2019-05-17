@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Form } from '../../layouts/elements';
+import { Button, Form, Heading5 } from '../../layouts/elements';
 
 import TextInputGroup from './TextInputGroup';
 import TextareaGroup from './TextareaGroup';
@@ -19,7 +19,7 @@ class ContactForm extends Component {
       subject: '',
       message: '',
       errors: {},
-      success: false,
+      success: false
     };
   }
 
@@ -50,7 +50,7 @@ class ContactForm extends Component {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...this.state }),
+      body: encode({ 'form-name': 'contact', ...this.state })
     })
       .then(() => this.setState({ success: true }))
       .catch(error => alert(error));
@@ -60,7 +60,7 @@ class ContactForm extends Component {
       email: '',
       subject: '',
       message: '',
-      errors: {},
+      errors: {}
     });
   };
 
@@ -70,15 +70,31 @@ class ContactForm extends Component {
       <div>
         {success ? (
           <div className='alert alert-success' role='alert'>
-            <button type='button' className='close' data-dismiss='alert' aria-label='Close'>
+            <button
+              type='button'
+              className='close'
+              data-dismiss='alert'
+              aria-label='Close'
+            >
               <span aria-hidden='true'>&times;</span>
             </button>
             <strong>Success!</strong> You're email has been submitted!
           </div>
         ) : null}
         <Form name='contact' method='POST' onSubmit={this.onSubmit}>
+          <Heading5 wwd>Web Blueprint Design Contact Form</Heading5>
           <input type='hidden' name='form-name' value='contact' />
+<<<<<<< HEAD
           <TextInputGroup name='name' label='Name' value={name} onChange={this.onChange} error={errors.name} />
+=======
+          <TextInputGroup
+            name='name'
+            label='Name:'
+            value={name}
+            onChange={this.onChange}
+            error={errors.name}
+          />
+>>>>>>> ae888a8badab271555517795a68dd0f97c0af812
           <TextInputGroup
             type='email'
             name='email'
