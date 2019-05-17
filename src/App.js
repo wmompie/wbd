@@ -26,6 +26,7 @@ class App extends Component {
 
   render() {
     const { loading } = this.state;
+    // eslint-disable-next-line
     {
       if (loading) {
         return (

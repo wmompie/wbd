@@ -34,11 +34,6 @@ export const Form = styled.form`
   justify-content: center;
   padding: 4% 50px;
   text-align: center;
-
-  .socials {
-    height: 50%;
-    padding: 0;
-  }
 `;
 
 export const EmailContainer = styled.div`
@@ -225,7 +220,7 @@ export const ContactContainer = styled.div`
 
   @media (max-width: 576px) {
     height: 100%;
-    min-height: 1500px;
+    min-height: 1200px;
 
     .email-active {
       animation: ${show} 0.6s;
