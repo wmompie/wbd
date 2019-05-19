@@ -50,7 +50,6 @@ class Contact extends Component {
     return (
       <ContactBG id={id}>
         <ContactH2 className='display-5'>CONTACT US. WE ARE LISTENING</ContactH2>
-
         <ContactContainer className='container'>
           <EmailContainer className={clicked ? 'email-active' : ''}>
             <ContactForm />
