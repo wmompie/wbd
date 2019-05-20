@@ -7,6 +7,7 @@ Website created for Web Blueprint Design using the technologies listed below.
 - [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
 - [Bootstrap](https://getbootstrap.com/) - The most popular HTML, CSS, and JS library in the world
 - [Classnames](https://www.npmjs.com/package/classnames) - A simple JavaScript utility for conditionally joining classNames together
+- [React Router](https://www.npmjs.com/package/react-router-dom) - Collection of navigational components that compose declaratively with the application
 - [React MD Spinner](https://github.com/tsuyoshiwada/react-md-spinner) - Material Design spinner components for React.js
 - [React Particles.js](https://vincentgarreau.com/particles.js/) - A lightweight JavaScript library for creating particles
 - [React Scroll](https://www.npmjs.com/package/react-scroll) - Component for animating vertical scrolling
