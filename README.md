@@ -14,6 +14,10 @@ Website created for Web Blueprint Design using the technologies listed below.
 - [Styled Components](https://www.styled-components.com/) - Utilising tagged template literals and the power of CSS to write CSS code to style components
 - [Netlify](https://www.netlify.com/) - All-in-one platform for automating modern web projects with continuous integration and automatic HTTPS
 
+## Previously Built With
+
+- [WordPress](https://wordpress.org/) - Blog tool, publishing platform, and CMS
+
 ### Engines
 
 - [Node.js v10.15.3](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine
