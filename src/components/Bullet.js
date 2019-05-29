@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Heading5 } from '../layouts/elements';
+import { Heading3 } from '../layouts/elements';
 import PropTypes from 'prop-types';
 
 const Arrow = styled.i`
@@ -9,7 +9,7 @@ const Arrow = styled.i`
   margin-right: 1rem;
   padding: 0.25rem 0 0 0.5rem;
 `;
-const WGHeading = styled(Heading5)`
+const WGHeading = styled(Heading3)`
   color: #212529;
   float: left;
   font-weight: 600;

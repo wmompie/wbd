@@ -95,7 +95,8 @@ export const Overlay = styled.div`
   background: -webkit-linear-gradient(to right, #01a4e4, #6cbefc);
   background: #6cbefc;
   background: linear-gradient(to right, #01a4e4, #6cbefc);
-  color: #525252;
+  /* color: #525252; - original color */
+  color: #0a0a0a;
   height: 100%;
   left: -100%;
   position: relative;

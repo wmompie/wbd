@@ -30,7 +30,8 @@ export const TitleHr = styled.hr`
 `;
 
 export const buttonStyle = {
-  backgroundColor: '#01a4e4',
+  // backgroundColor: '#01a4e4',  - original color
+  backgroundColor: '#015d84',
   borderRadius: '50px',
   border: '1px solid #01a4e4',
   color: '#fefefe',

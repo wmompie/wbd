@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { Heading2, Heading5 } from '../layouts/elements';
+import { Heading2, Heading3 } from '../layouts/elements';
 
 const WWDHeadingContainer = styled.div`
   display: flex;
@@ -10,7 +10,9 @@ const WWDHeadingContainer = styled.div`
 `;
 
 const blue = {
-  color: '#01a4e4',
+  // color: '#01a4e4',  - original color
+  color: '#015d84',
+  textDecoration: 'underline',
 };
 
 const WhatWeDo = ({ id }) => (
@@ -24,7 +26,7 @@ const WhatWeDo = ({ id }) => (
     </WWDHeadingContainer>
     <div className='row justify-content-around my-5'>
       <section className='col-12 col-xl-3 pb-5'>
-        <Heading5 wwd>MAINTENANCE</Heading5>
+        <Heading3 wwd>MAINTENANCE</Heading3>
         <p>
           You change the oil in your car. You get a haircut when you’re feeling shaggy. Heck, you even visit the dentist
           every so often. But, are you maintaining your website properly? If you want to maximize your return on
@@ -35,7 +37,7 @@ const WhatWeDo = ({ id }) => (
         </p>
       </section>
       <section className='col-12 col-xl-3 pb-5'>
-        <Heading5 wwd>RESPONSIVE DESIGN</Heading5>
+        <Heading3 wwd>RESPONSIVE DESIGN</Heading3>
         <p>
           Responsive Design is the approach that suggests that design and development should respond to the user’s
           behavior and environment based on screen size, platform and orientation. The practice consists of a mix of
@@ -46,7 +48,7 @@ const WhatWeDo = ({ id }) => (
         </p>
       </section>
       <section className='col-12 col-xl-3 pb-5'>
-        <Heading5 wwd>IDEAS &#38; CONCEPTS</Heading5>
+        <Heading3 wwd>IDEAS &#38; CONCEPTS</Heading3>
         <p>
           Design isn’t just visual, it isn’t just the façade; it’s the personality beneath. Design is the entire
           experience from the moment users enter your site to well after they’ve left. Storyboards visually map out the

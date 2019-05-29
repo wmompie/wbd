@@ -14,6 +14,7 @@ const TextareaGroup = ({ label, name, value, onChange, error }) => (
       })}
       onChange={onChange}
       rows='2'
+      aria-label={label}
     />
     {error && <div className='invalid-feedback'>{error}</div>}
   </div>

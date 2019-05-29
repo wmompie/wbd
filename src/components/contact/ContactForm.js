@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Form, Heading5 } from '../../layouts/elements';
+import { Button, Form, Heading3 } from '../../layouts/elements';
 
 import TextInputGroup from './TextInputGroup';
 import TextareaGroup from './TextareaGroup';
@@ -77,7 +77,7 @@ class ContactForm extends Component {
           </div>
         ) : null}
         <Form name='contact' method='POST' onSubmit={this.onSubmit}>
-          <Heading5 wwd>Web Blueprint Design Contact Form</Heading5>
+          <Heading3 wwd>Web Blueprint Design Contact Form</Heading3>
           <input type='hidden' name='form-name' value='contact' />
           <TextInputGroup name='name' label='Name' value={name} onChange={this.onChange} error={errors.name} />
           <TextInputGroup

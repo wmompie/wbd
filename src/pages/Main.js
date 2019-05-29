@@ -14,7 +14,7 @@ import Footer from '../components/footer/Footer';
 import Copyright from '../components/footer/Copyright';
 
 const Main = () => (
-  <div>
+  <div role='main'>
     <Link to='welcome' smooth={true} duration={900}>
       <ToTop>
         <i className='fas fa-chevron-up' />

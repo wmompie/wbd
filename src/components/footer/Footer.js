@@ -2,14 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import {
-  FooterDiv,
-  Sitemap,
-  SitemapHr,
+  anchorStyle,
   ContactHr,
-  FooterLi,
+  FooterDiv,
   FooterH2,
   FooterIcon,
-  anchorStyle,
+  FooterLi,
+  SalesLink,
+  Sitemap,
+  SitemapHr,
 } from '../../layouts/elements';
 
 const Footer = () => (
@@ -62,17 +63,19 @@ const Footer = () => (
         <FooterH2 className='display-5'>WHERE TO FIND US</FooterH2>
         <ContactHr className='my-1' />
         <div className='mt-4'>
-          <FooterLi>
-            <FooterIcon className='fas fa-home' /> Web Blueprint Design,
-          </FooterLi>
-          <FooterLi style={{ paddingLeft: '2.5rem' }}>Fort Lauderdale, FL</FooterLi>
-          <FooterLi>
-            <FooterIcon className='fas fa-phone-volume' /> &#40;754&#41; 900-4223
-          </FooterLi>
-          <FooterLi>
-            <FooterIcon className='far fa-envelope' />
-            <a href='mailto:sales@webblueprintdesign.com'>sales&#64;webblueprintdesign.com</a>
-          </FooterLi>
+          <ul>
+            <FooterLi>
+              <FooterIcon className='fas fa-home' /> Web Blueprint Design,
+            </FooterLi>
+            <FooterLi style={{ paddingLeft: '2.5rem' }}>Fort Lauderdale, FL</FooterLi>
+            <FooterLi>
+              <FooterIcon className='fas fa-phone-volume' /> &#40;754&#41; 900-4223
+            </FooterLi>
+            <FooterLi>
+              <FooterIcon className='far fa-envelope' />
+              <SalesLink href='mailto:sales@webblueprintdesign.com'>sales&#64;webblueprintdesign.com</SalesLink>
+            </FooterLi>
+          </ul>
         </div>
       </div>
     </div>

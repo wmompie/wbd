@@ -2,22 +2,22 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import { ToTop } from '../layouts/elements';
 import {
+  Anchor,
+  ContactContainer,
+  ContactLI,
+  ContactSection,
+  EduContainer,
+  ExpContainer,
+  FontIcon,
   ResumeDiv,
-  ResumeHr,
   ResumeH1,
   ResumeH2,
   ResumeH3,
   ResumeH4,
-  ContactContainer,
-  SummaryContainer,
-  SkillsContainer,
-  ExpContainer,
-  EduContainer,
-  ContactSection,
+  ResumeHr,
   ResumeUL,
-  ContactLI,
-  FontIcon,
-  Anchor,
+  SkillsContainer,
+  SummaryContainer,
 } from '../layouts/elements/Resume';
 
 const Resume = () => (

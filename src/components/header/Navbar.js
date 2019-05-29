@@ -7,7 +7,8 @@ import PropTypes from 'prop-types';
 import Logo from './Logo';
 
 const anchorStyle = {
-  color: '#01a4e4',
+  // color: '#01a4e4',  - original color
+  color: '#015d84',
   cursor: 'pointer',
   fontWeight: 'bold',
 };

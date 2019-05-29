@@ -5,7 +5,8 @@ export const boxShadow = {
 };
 export const ProjectLink = styled.a`
   align-items: center;
-  background-color: #01a4e4;
+  /* background-color: #01a4e4; - original color */
+  background-color: #015d84;
   box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
   color: #fefefe;
   display: flex;
@@ -16,7 +17,8 @@ export const ProjectLink = styled.a`
 
   &:hover {
     background-color: #fefefe;
-    border: 1px solid #01a4e4;
+    /* border: 1px solid #01a4e4; - original color */
+    border: 1px solid #015d84;
     color: #01a4e4;
   }
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import classnames from 'classnames';
 import { Label } from '../../layouts/elements';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 const TextInputGroup = ({ label, type, name, value, onChange, error }) => {
   return (
@@ -15,6 +15,7 @@ const TextInputGroup = ({ label, type, name, value, onChange, error }) => {
         })}
         value={value}
         onChange={onChange}
+        aria-label={label}
       />
       {error && <div className='invalid-feedback'>{error}</div>}
     </div>

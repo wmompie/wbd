@@ -45,3 +45,7 @@ export const anchorStyle = {
   fontSize: '1.025rem',
   textDecoration: 'none',
 };
+
+export const SalesLink = styled.a`
+  color: #3ec9fe;
+`;
