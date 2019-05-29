@@ -21,7 +21,7 @@ import {
 } from '../layouts/elements/Resume';
 
 const Resume = () => (
-  <ResumeDiv className='py-5' id='top'>
+  <ResumeDiv className='py-5' id='top' role='main'>
     <Link to='top' smooth={true} duration={900}>
       <ToTop>
         <i className='fas fa-chevron-up' />
@@ -140,7 +140,7 @@ const Resume = () => (
       <ResumeHr />
       <ExpContainer>
         <div>
-          <h5>Jan 2017 - present</h5>
+          <h4>Jan 2017 - present</h4>
         </div>
         <div className='pl-4'>
           <h5 className='font-weight-bold'>Web Developer</h5>
@@ -158,7 +158,7 @@ const Resume = () => (
       </ExpContainer>
       <ExpContainer>
         <div>
-          <h5>Apr 2017 - present</h5>
+          <h4>Apr 2017 - present</h4>
         </div>
         <div className='pl-4'>
           <h5 className='font-weight-bold'>Product Repair Associate</h5>
@@ -184,7 +184,7 @@ const Resume = () => (
 
       <EduContainer>
         <div>
-          <h5>Jan 2017 - Jun 2019</h5>
+          <h4>Jan 2017 - Jun 2019</h4>
         </div>
         <div className='pl-4'>
           <ResumeH4 primary>DeVry University - Bachelor of Science in Multimedia Design and Development</ResumeH4>

@@ -26,34 +26,34 @@ export const ResumeHr = styled.hr`
 `;
 
 export const ResumeH1 = styled.h1`
-  font-weight: 900;
-  font-size: 2.5rem;
   color: #007c83;
+  font-size: 2.5rem;
+  font-weight: 900;
 `;
 
 export const ResumeH2 = styled.h2`
-  font-weight: 400;
-  font-size: 2rem;
   color: #007c83;
+  font-size: 2rem;
+  font-weight: 400;
 `;
 
 export const ResumeH3 = styled.h3`
-  text-align: ${props => (props.primary ? 'left' : 'center')};
-  font-weight: 700;
-  font-size: 2rem;
   color: #525252;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: ${props => (props.primary ? 'left' : 'center')};
 `;
 
 export const ResumeH4 = styled.h4`
-  font-weight: ${props => (props.primary ? '700' : '400')};
   font-size: ${props => (props.primary ? '1rem' : '1.5rem')};
+  font-weight: ${props => (props.primary ? '700' : '400')};
 `;
 
 export const ContactContainer = styled.div`
-  justify-content: space-between;
-  display: flex;
-  margin-top: 2rem;
   align-items: start;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
 `;
 
 export const SummaryContainer = styled.div`
@@ -66,8 +66,8 @@ export const SkillsContainer = styled(ContactContainer)`
   padding-bottom: 1rem;
 
   @media (max-width: 575px) {
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
   }
 `;
@@ -91,9 +91,9 @@ export const ContactSection = styled.div`
 `;
 
 export const ResumeUL = styled.ul`
-  padding-left: 0;
-  list-style: none;
   line-height: 175%;
+  list-style: none;
+  padding-left: 0;
 `;
 
 export const ContactLI = styled.li`
@@ -105,8 +105,9 @@ export const FontIcon = styled.i`
 `;
 
 export const Anchor = styled.a`
-  text-decoration: none;
-  color: #01a4e4;
+  /* color: #01a4e4; - original color */
+  color: #015d84;
+  text-decoration: underline;
 
   &:hover {
     color: blue;

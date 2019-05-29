@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { ToTop } from '../layouts/elements';
+import { ToTop, SalesLink } from '../layouts/elements';
 import styled from 'styled-components';
 
 import Copyright from '../components/footer/Copyright';
 
-const H2 = styled.h2`
+const H1 = styled.h1`
   font-weight: bold;
   margin-bottom: 15px;
   text-decoration: underline;
@@ -20,14 +20,14 @@ const Section = styled.div`
 `;
 
 const Terms = () => (
-  <div id='top'>
+  <div id='top' role='main'>
     <Link to='top' smooth={true} duration={900}>
       <ToTop>
         <i className='fas fa-chevron-up' />
       </ToTop>
     </Link>
     <div className='container mt-4'>
-      <H2>Terms and Conditions</H2>
+      <H1>Terms and Conditions</H1>
       <Section>
         <p>
           Quotes are for estimation purposes and is not a guarantee of cost for services. Quotes are based on current
@@ -36,8 +36,10 @@ const Terms = () => (
           being incurred. The estimates are provided as a service to our clients. However, as each custom package and
           project is unique, so too is each estimate. Following are some general parameters and considerations for Web
           Blueprint Design. Please email{' '}
-          <a href='mailto:sales@webblueprintdesign.com'>sales&#64;webblueprintdesign.com</a> with any additional
-          questions.
+          <a href='mailto:sales@webblueprintdesign.com' style={{ color: '#015d84', textDecoration: 'underline' }}>
+            sales&#64;webblueprintdesign.com
+          </a>{' '}
+          with any additional questions.
         </p>
         <ul>
           <li>
