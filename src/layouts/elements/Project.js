@@ -19,7 +19,8 @@ export const ProjectLink = styled.a`
     background-color: #fefefe;
     /* border: 1px solid #01a4e4; - original color */
     border: 1px solid #015d84;
-    color: #01a4e4;
+    /* color: #01a4e4; - original color */
+    color: #015d84;
   }
 
   @media (min-width: 1650px) {
