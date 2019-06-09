@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { ToTop, SalesLink } from '../layouts/elements';
+import { ToTop } from '../layouts/elements';
 import styled from 'styled-components';
 
 import Copyright from '../components/footer/Copyright';
