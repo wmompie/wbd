@@ -13,7 +13,7 @@ import {
   OverlayRight,
   MediaContainer,
   EmailContainer,
-  SocialContainer,
+  SocialContainer
 } from '../../layouts/elements';
 import PropTypes from 'prop-types';
 
@@ -37,7 +37,7 @@ const ContactH2 = styled(Heading2)`
 
 class Contact extends Component {
   state = {
-    clicked: false,
+    clicked: false
   };
 
   handleClick = e => {
@@ -49,7 +49,9 @@ class Contact extends Component {
     const { clicked } = this.state;
     return (
       <ContactBG id={id}>
-        <ContactH2 className='display-5'>CONTACT US. WE ARE LISTENING</ContactH2>
+        <ContactH2 className='display-5'>
+          CONTACT US. WE ARE LISTENING
+        </ContactH2>
         <ContactContainer className='container'>
           <EmailContainer className={clicked ? 'email-active' : ''}>
             <ContactForm />
@@ -74,16 +76,29 @@ class Contact extends Component {
                 >
                   <i className='fab fa-behance' />
                 </a>
+                <a
+                  href='https://www.linkedin.com/in/wmompie/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='LinkedIn profile page for William Mompie'
+                >
+                  <i className='fab fa-linkedin' />
+                </a>
               </SocialContainer>
-              <p>We'd love to hear from you! Check out our social links above.</p>
+              <p>
+                We'd love to hear from you! Check out our social links above.
+              </p>
             </Form>
           </MediaContainer>
-          <OverlayContainer className={clicked ? 'overlaycontainer-active' : ''}>
+          <OverlayContainer
+            className={clicked ? 'overlaycontainer-active' : ''}
+          >
             <Overlay className={clicked ? 'overlay-active' : ''}>
               <OverlayLeft className={clicked ? 'overlayleft-active' : ''}>
                 <h1>Contact Form</h1>
                 <p>
-                  Sending us an email is easy. Just fill out the form and we'll get back to you as soon as possible!
+                  Sending us an email is easy. Just fill out the form and we'll
+                  get back to you as soon as possible!
                 </p>
                 <Button className='ghost' onClick={this.handleClick}>
                   Social Media
@@ -105,7 +120,7 @@ class Contact extends Component {
 }
 
 Contact.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired
 };
 
 export default Contact;
