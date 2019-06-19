@@ -8,7 +8,7 @@ class Projects extends Component {
     projects: [
       {
         id: 9,
-        img: `https://res.cloudinary.com/web-blueprint-design/image/upload/f_auto,q_auto/v1560904840/Contact-Keeper/ContactKeeper_zfkz17.png`,
+        img: `https://res.cloudinary.com/web-blueprint-design/image/upload/f_auto,q_auto/v1560910011/Contact-Keeper/ContactKeeper_o0hl2m.png`,
         alt: `Contact Keeper Project`,
         projectLink: `https://hidden-scrubland-90417.herokuapp.com/login`,
         projectName: `Project - Contact Keeper`,
@@ -81,19 +81,22 @@ class Projects extends Component {
     ],
   };
 
-  // const { img, alt, projectLink, projectName, git } = projects;
   render() {
-    const { id } = this.props;
-    const { projects } = this.state;
-
     return (
-      <div className='container-fluid text-center my-5' id={id}>
+      <div className='container-fluid text-center my-5' id={this.props.id}>
         <Heading2 lightBG className='display-5'>
           PROJECTS
         </Heading2>
         <div className='row justify-content-around my-5'>
-          {projects.map(project => (
-            <Project key={project.id} project={project} />
+          {this.state.projects.map(project => (
+            <Project
+              key={project.id}
+              img={project.img}
+              alt={project.alt}
+              projectLink={project.projectLink}
+              projectName={project.projectName}
+              git={project.git}
+            />
           ))}
         </div>
       </div>
