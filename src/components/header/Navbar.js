@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';

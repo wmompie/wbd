@@ -10,7 +10,7 @@ import Main from './pages/Main';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import NotFound from './pages/NotFound';
-// import Resume from './pages/Resume';
+import Resume from './pages/Resume';
 
 class App extends Component {
   constructor(props) {
