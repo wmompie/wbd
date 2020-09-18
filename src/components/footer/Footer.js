@@ -41,11 +41,11 @@ const Footer = () => (
               Contact Us
             </ScrollLink>
           </FooterLi>
-          {/* <FooterLi>
+          <FooterLi>
             <Link to='/resume' target='_blank' style={anchorStyle}>
               Resume
             </Link>
-          </FooterLi> */}
+          </FooterLi>
           <FooterLi>
             <Link to='/terms' target='_blank' style={anchorStyle}>
               Terms and Conditions

@@ -77,11 +77,11 @@ const Navbar = ({ id }) => (
               CONTACT
             </ScrollLink>
           </li>
-          {/* <li className='nav-item mx-3'>
+          <li className='nav-item mx-3'>
             <Link className='nav-link' to='/resume' target='_blank' style={anchorStyle}>
               RESUME
             </Link>
-          </li> */}
+          </li>
         </ul>
       </div>
     </div>
