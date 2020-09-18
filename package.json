@@ -1,7 +1,7 @@
 {
   "name": "web-blueprint-design",
   "description": "Website for Web Blueprint Design",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "engines": {
     "node": "10.15.3",
     "npm": "6.4.1"
@@ -14,10 +14,10 @@
     "react-dom": "^16.8.6",
     "react-md-spinner": "^0.3.0",
     "react-particles-js": "^2.6.0",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
     "react-scroll": "^1.7.11",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

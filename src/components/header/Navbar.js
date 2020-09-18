@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
@@ -77,11 +77,11 @@ const Navbar = ({ id }) => (
               CONTACT
             </ScrollLink>
           </li>
-          <li className='nav-item mx-3'>
+          {/* <li className='nav-item mx-3'>
             <Link className='nav-link' to='/resume' target='_blank' style={anchorStyle}>
               RESUME
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

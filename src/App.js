@@ -10,7 +10,7 @@ import Main from './pages/Main';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import NotFound from './pages/NotFound';
-import Resume from './pages/Resume';
+// import Resume from './pages/Resume';
 
 class App extends Component {
   constructor(props) {
@@ -46,7 +46,7 @@ class App extends Component {
                 <Route exact path='/' component={Main} />
                 <Route path='/terms' component={Terms} />
                 <Route path='/privacy' component={Privacy} />
-                <Route path='/resume' component={Resume} />
+                {/* <Route path='/resume' component={Resume} /> */}
                 <Route component={NotFound} />
               </Switch>
             </div>
