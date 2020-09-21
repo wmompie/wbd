@@ -17,24 +17,6 @@ import {
 } from '../../layouts/elements';
 import PropTypes from 'prop-types';
 
-const ContactBG = styled(Background)`
-  background-image: url('https://res.cloudinary.com/web-blueprint-design/image/upload/e_blur:700,f_auto,o_80,q_auto/v1556157373/WBD/communication-contact-conversation-33999_bgvff0.jpg');
-  min-height: 100%;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-`;
-
-const ContactH2 = styled(Heading2)`
-  margin: 2rem auto;
-
-  @media (min-width: 770px) {
-    width: 768px;
-  }
-  @media (max-width: 576px) {
-    width: 90%;
-  }
-`;
-
 class Contact extends Component {
   state = {
     clicked: false
@@ -124,3 +106,21 @@ Contact.propTypes = {
 };
 
 export default Contact;
+
+const ContactBG = styled(Background)`
+  background-image: url('https://res.cloudinary.com/web-blueprint-design/image/upload/e_blur:700,f_auto,o_80,q_auto/v1556157373/WBD/communication-contact-conversation-33999_bgvff0.jpg');
+  min-height: 100%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+`;
+
+const ContactH2 = styled(Heading2)`
+  margin: 2rem auto;
+
+  @media (min-width: 770px) {
+    width: 768px;
+  }
+  @media (max-width: 576px) {
+    width: 90%;
+  }
+`;

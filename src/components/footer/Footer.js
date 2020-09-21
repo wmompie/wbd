@@ -32,8 +32,8 @@ const Footer = () => (
             </ScrollLink>
           </FooterLi>
           <FooterLi>
-            <ScrollLink to='projects' smooth={true} offset={-40} duration={900} style={anchorStyle}>
-              Projects
+            <ScrollLink to='pricing' smooth={true} offset={-40} duration={900} style={anchorStyle}>
+              Pricing
             </ScrollLink>
           </FooterLi>
           <FooterLi>
@@ -41,11 +41,6 @@ const Footer = () => (
               Contact Us
             </ScrollLink>
           </FooterLi>
-          {/* <FooterLi>
-            <Link to='/resume' target='_blank' style={anchorStyle}>
-              Resume
-            </Link>
-          </FooterLi> */}
           <FooterLi>
             <Link to='/terms' target='_blank' style={anchorStyle}>
               Terms and Conditions

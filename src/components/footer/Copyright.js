@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Copyright = () => (
+  <Copy>&#169; 2017-{new Date().getFullYear()} Web Blueprint Design, LLC. All Rights Reserved</Copy>
+);
+
+export default Copyright;
+
 const Copy = styled.p`
   align-items: center;
   background-color: #2f2f2f;
@@ -17,9 +23,3 @@ const Copy = styled.p`
     font-size: 0.75rem;
   }
 `;
-
-const Copyright = () => (
-  <Copy>&#169; 2017-{new Date().getFullYear()} Web Blueprint Design, LLC. All Rights Reserved</Copy>
-);
-
-export default Copyright;

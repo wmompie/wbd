@@ -3,18 +3,6 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Heading2, Heading3 } from '../layouts/elements';
 
-const WWDHeadingContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  text-align: center;
-`;
-
-const blue = {
-  // color: '#01a4e4',  - original color
-  color: '#015d84',
-  textDecoration: 'underline',
-};
-
 const WhatWeDo = ({ id }) => (
   <div className='container-fluid my-5' id={id}>
     <WWDHeadingContainer>
@@ -74,3 +62,15 @@ WhatWeDo.propTypes = {
 };
 
 export default WhatWeDo;
+
+const WWDHeadingContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  text-align: center;
+`;
+
+const blue = {
+  // color: '#01a4e4',  - original color
+  color: '#015d84',
+  textDecoration: 'underline',
+};

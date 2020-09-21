@@ -1,33 +1,8 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
 import Logo from './Logo';
-
-const anchorStyle = {
-  // color: '#01a4e4',  - original color
-  color: '#015d84',
-  cursor: 'pointer',
-  fontWeight: 'bold',
-};
-
-const Nav = styled.nav`
-  position: absolute;
-  width: 100%;
-  z-index: 9999;
-
-  @media (min-width: 992px) {
-    position: relative;
-  }
-
-  @media (max-width: 575px) {
-    .logo {
-      height: 40px;
-    }
-  }
-`;
 
 const Navbar = ({ id }) => (
   <Nav id={id} className='navbar navbar-expand-md navbar-light bg-light'>
@@ -63,13 +38,13 @@ const Navbar = ({ id }) => (
           <li className='nav-item mx-3'>
             <ScrollLink
               className='nav-link'
-              to='projects'
+              to='pricing'
               smooth={true}
               offset={-40}
               duration={900}
               style={anchorStyle}
             >
-              PROJECTS
+              PRICING
             </ScrollLink>
           </li>
           <li className='nav-item mx-3'>
@@ -77,11 +52,6 @@ const Navbar = ({ id }) => (
               CONTACT
             </ScrollLink>
           </li>
-          {/* <li className='nav-item mx-3'>
-            <Link className='nav-link' to='/resume' target='_blank' style={anchorStyle}>
-              RESUME
-            </Link>
-          </li> */}
         </ul>
       </div>
     </div>
@@ -93,3 +63,26 @@ Navbar.propTypes = {
 };
 
 export default Navbar;
+
+const anchorStyle = {
+  // color: '#01a4e4',  - original color
+  color: '#015d84',
+  cursor: 'pointer',
+  fontWeight: 'bold',
+};
+
+const Nav = styled.nav`
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+
+  @media (min-width: 992px) {
+    position: relative;
+  }
+
+  @media (max-width: 575px) {
+    .logo {
+      height: 40px;
+    }
+  }
+`;

@@ -8,7 +8,7 @@ import Header from '../components/header/Header';
 import FirstWebsite from '../components/header/FirstWebsite';
 import WhatWeDo from '../components/WhatWeDo';
 import WhatsGreat from '../components/WhatsGreat';
-import Projects from '../components/projects/Projects';
+import Pricing from '../components/price/Pricing';
 import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
 import Copyright from '../components/footer/Copyright';
@@ -25,7 +25,7 @@ const Main = () => (
     <FirstWebsite id='firstweb' />
     <WhatWeDo id='whatwedo' />
     <WhatsGreat />
-    <Projects id='projects' />
+    <Pricing id='pricing' />
     <Contact id='contact' />
     <Footer />
     <Copyright />
