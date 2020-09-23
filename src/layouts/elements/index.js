@@ -1,5 +1,6 @@
 export * from './Background';
 export * from './Buttons';
+export * from './Cards';
 export * from './Footer';
 export * from './Form';
 export * from './Headings';
