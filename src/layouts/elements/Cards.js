@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
   box-sizing: border-box;
-  color: #fff;
+  color: #f4f4f4;
   margin: 0;
   padding: 30px;
 `;
@@ -46,7 +46,7 @@ export const FlexItems = styled.div`
   export const CardI = styled.i`
   background-color: #015d84;
   border-radius: 50%;
-  color: #fff;
+  color: #f4f4f4;
   margin-bottom: 15px;
   padding: 1rem;
 `;
@@ -54,7 +54,7 @@ export const FlexItems = styled.div`
   export const CardI2 = styled.i`
   background-color: #01a4e4;
   border-radius: 50%;
-  color: #fff;
+  color: #f4f4f4;
   margin-bottom: 15px;
   padding: 1rem;
 `;

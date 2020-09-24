@@ -16,9 +16,9 @@ class Pricing extends Component {
               <div>
                 <CardH3>Web Hosting</CardH3>
                 <CardUL>
-                  <li>item 1</li>
-                  <li>item 2</li>
-                  <li>item 3</li>
+                  <li>Accessible online presence</li>
+                  <li>Easy to use control panel</li>
+                  <li>Professional email accounts</li>
                 </CardUL>
               </div>
             </div>
@@ -27,9 +27,9 @@ class Pricing extends Component {
               <div>
                 <CardH3>Cloud Storage</CardH3>
                 <CardUL>
-                  <li>item 1</li>
-                  <li>item 2</li>
-                  <li>item 3</li>
+                  <li>Data security</li>
+                  <li>Real time synchronization</li>
+                  <li>Scalable and flexible space</li>
                 </CardUL>
               </div>
             </div>
@@ -38,9 +38,9 @@ class Pricing extends Component {
               <div>
                 <CardH3>SEO Assistance</CardH3>
                 <CardUL>
-                  <li>item 1</li>
-                  <li>item 2</li>
-                  <li>item 3</li>
+                  <li>Top notch analytics</li>
+                  <li>Marketing tools</li>
+                  <li>Attract new clients/visitors</li>
                 </CardUL>
               </div>
             </div>
