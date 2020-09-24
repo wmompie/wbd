@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Heading2, Card, FlexItems, CardI, CardH3, CardUL } from '../../layouts/elements';
+import { Heading2, Card, FlexItems, CardI, CardI2, CardH3, CardUL } from '../../layouts/elements';
 import PropTypes from 'prop-types';
 
 class Pricing extends Component {
@@ -12,9 +12,9 @@ class Pricing extends Component {
         <Card>
           <FlexItems>
             <div>
-              <CardI className="fas fa-university fa-2x"></CardI>
+              <CardI className='fas fa-network-wired fa-2x'></CardI>
               <div>
-                <CardH3>Investment Banking</CardH3>
+                <CardH3>Web Hosting</CardH3>
                 <CardUL>
                   <li>item 1</li>
                   <li>item 2</li>
@@ -23,9 +23,9 @@ class Pricing extends Component {
               </div>
             </div>
             <div>
-              <CardI className="fas fa-book-reader fa-2x"></CardI>
+              <CardI2 className='fas fa-coins fa-2x'></CardI2>
               <div>
-                <CardH3>Portfolio Manager</CardH3>
+                <CardH3>Cloud Storage</CardH3>
                 <CardUL>
                   <li>item 1</li>
                   <li>item 2</li>
@@ -34,9 +34,9 @@ class Pricing extends Component {
               </div>
             </div>
             <div>
-              <CardI className="fas fa-pencil-alt fa-2x"></CardI>
+              <CardI className='fas fa-search-dollar fa-2x'></CardI>
               <div>
-                <CardH3>Tax and Custodial</CardH3>
+                <CardH3>SEO Assistance</CardH3>
                 <CardUL>
                   <li>item 1</li>
                   <li>item 2</li>
@@ -44,7 +44,6 @@ class Pricing extends Component {
                 </CardUL>
               </div>
             </div>
-
           </FlexItems>
         </Card>
       </div>
