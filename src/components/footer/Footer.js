@@ -32,8 +32,8 @@ const Footer = () => (
             </ScrollLink>
           </FooterLi>
           <FooterLi>
-            <ScrollLink to='pricing' smooth={true} offset={-40} duration={900} style={anchorStyle}>
-              Pricing
+            <ScrollLink to='services' smooth={true} offset={-40} duration={900} style={anchorStyle}>
+              Services
             </ScrollLink>
           </FooterLi>
           <FooterLi>

@@ -38,13 +38,13 @@ const Navbar = ({ id }) => (
           <li className='nav-item mx-3'>
             <ScrollLink
               className='nav-link'
-              to='pricing'
+              to='services'
               smooth={true}
               offset={-40}
               duration={900}
               style={anchorStyle}
             >
-              PRICING
+              SERVICES
             </ScrollLink>
           </li>
           <li className='nav-item mx-3'>

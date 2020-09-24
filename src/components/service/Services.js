@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Heading2, Card, FlexItems, CardI, CardI2, CardH3, CardUL } from '../../layouts/elements';
 import PropTypes from 'prop-types';
 
-class Pricing extends Component {
+class Services extends Component {
   render() {
     return (
       <div className='container-fluid text-center my-5' id={this.props.id}>
         <Heading2 lightBG className='display-5'>
-          PRICING
+          SERVICES
         </Heading2>
         <Card>
           <FlexItems>
@@ -51,8 +51,8 @@ class Pricing extends Component {
   }
 }
 
-Pricing.propTypes = {
+Services.propTypes = {
   id: PropTypes.string.isRequired,
 };
 
-export default Pricing;
+export default Services;
